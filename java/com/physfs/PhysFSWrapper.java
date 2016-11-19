@@ -2,7 +2,7 @@ package com.physfs;
 
 public class PhysFSWrapper {
 	static {
-		System.loadLibrary("physfs");
+		System.loadLibrary("PhysFSWrapper");
 	}
 
 	/**
@@ -15,4 +15,7 @@ public class PhysFSWrapper {
 	 * NOTE: only ExternalStorageDirectory (like "/storage/emulated/0") is supported as base_dir in this version..
 	 **/
 	public native void setDirs(String base_dir, String user_dir);
+	
+	//TODO: your code, that uses physfs
+	public native void test();
 }

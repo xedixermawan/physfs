@@ -14,6 +14,9 @@ extern "C" {
  */
 JNIEXPORT void JNICALL Java_com_physfs_PhysFSWrapper_setDirs
   (JNIEnv *, jobject, jstring, jstring);
+  
+  JNIEXPORT void JNICALL Java_com_physfs_PhysFSWrapper_test
+  (JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }
